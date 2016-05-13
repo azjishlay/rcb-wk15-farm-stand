@@ -70,5 +70,5 @@ Thumbs.db
 
 
 node_modules
-!app/db/schema.sql
-!app/db/seeds.sql
+!db/schema.sql
+!db/seeds.sql
