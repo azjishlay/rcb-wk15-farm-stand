@@ -22,17 +22,17 @@
                             <div class="spacer-10"></div>
 
                             <div class="tab-content">
-                                <form action="" method="POST" role="form">
+                                <form action="/add-new" method="POST" role="form">
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="">Item</label>
-                                            <input type="text" class="form-control" id="item" placeholder="">
+                                            <input type="text" class="form-control" id="item" name="item" placeholder="">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Category</label>
                                             <div>
-                                                <select class="selectpicker form-control" id="category" data-width="100%">
+                                                <select class="selectpicker form-control" id="category" name="category" data-width="100%">
                                                     <option>Fruits</option>
                                                     <option>Roots</option>
                                                     <option>Pies</option>
@@ -44,11 +44,11 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="">Price</label>
-                                            <input type="text" class="form-control" id="price" placeholder="">
+                                            <input type="text" class="form-control" id="price" name="price" placeholder="">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Quantity</label>
-                                            <input type="text" class="form-control" id="quantity" placeholder="">
+                                            <input type="text" class="form-control" id="quantity" name="quantity" placeholder="">
                                         </div>
                                     </div>
 

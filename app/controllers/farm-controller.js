@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
-var db = require('../models/farm.js');
+var Database = require('../models/farm.js');
 
 // ROUTES
 
 router.get('/', function(req,res) {
 
-    db.findAll({
+    Database.findAll({
 
     }).then(function(data){
         console.log("Find all!");
@@ -14,11 +14,11 @@ router.get('/', function(req,res) {
     });
 });
 
-router.get('/?search:', function(req,res) {
+router.get('/search', function(req,res) {
 
     if(req.params.items){
 
-        db.findAll({
+        Database.findAll({
             where: {
                 item: req.params.items
             }
@@ -29,7 +29,7 @@ router.get('/?search:', function(req,res) {
 
     else{
 
-        db.findAll({
+        Database.findAll({
 
         }).then(function(result){
             res.json(result);
@@ -42,15 +42,20 @@ router.get('/add-new', function(req,res) {
     res.render('add-new');
 });
 
-router.post('/add-new', function(req, res){
+router.post('/add-new', function(req,res){
 
-    var item = req.body;
+    var input_data = req.body;
+    console.log(input_data);
+    
+    var item = Database.build({
+        item: input_data.item,
+        category: input_data.category,
+        price: input_data.price,
+        quantity: input_data.quantity,
+    });
 
-    db.create({
-        item: item.item,
-        category: item.category,
-        price: item.price,
-        quantity: item.quantity,
+    item.save().then(function(){
+        res.redirect('/');
     });
 
 })
