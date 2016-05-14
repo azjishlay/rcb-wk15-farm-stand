@@ -1,15 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <title>Nick & Judy's Farm Stand</title>
 
-    <!--Google Materialize CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <!--Google Materialize JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+    <!--Font Awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/color.css" />
+
+    <!--Expanding Search Bar-->
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/sb-search.css" />
+    <script src="assets/js/modernizr.custom.js"></script>
+
+    <!--Bootstrap-Select-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 
 </head>
 <body>
-{{{ body }}}
+    <div class="body">
+
+        <div class="site-header-wrapper">
+
+            <header class="site-header sticky-header">
+                <div class="container sp-cont">
+                    <div class="site-logo">
+                        <h1><a href="/" title="Farm Stand" class="default-logo">
+                            <img src="assets/img/logo@2x11.png" alt="Logo" width="178" height="40" data-pin-nopin="true">
+                        </a></h1>
+                        <span class="site-tagline">Carrots! Carrots! Carrots!</span>
+                    </div>
+                    <div class="header-right">
+
+                        <!--Expanding Search Bar-->
+                        <div class="column">
+                            <div id="sb-search" class="sb-search">
+                                <form>
+                                    <input class="sb-search-input" placeholder="Search for an item . . ." type="text" value="" name="search" id="search">
+                                    <input class="sb-search-submit" type="submit">
+                                    <span class="sb-icon-search"><i class="fa fa-search"></i></span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End Site Header -->
+
+            <div class="navbar">
+                <div class="container sp-cont">
+                    <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+
+                    <!-- Main Navigation -->
+                    <nav class="main-navigation dd-menu toggle-menu" role="navigation">
+                        <ul id="menu-main-menu" class="sf-menu sf-js-enabled">
+
+                            <li class="menu-item-720 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                <a class="sf-with-ul">Home<span class="nav-line"></span> <i class="fa fa-angle-down"></i></a>
+                            </li>
+
+                            <li class="menu-item-727 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a class="sf-with-ul">Items<span class="nav-line"></span> <i class="fa fa-angle-down"></i></a>
+
+                                <ul class="sub-menu" style="display: none;">
+                                    <li class="menu-item-734 menu-item menu-item-type-custom menu-item-object-custom ">
+                                        <a href="http://preview.imithemes.com/autostars-wp-realestate/author/fte/">Dealer Prosite</a>
+                                    </li>
+                                    <li class="menu-item-764 menu-item menu-item-type-post_type menu-item-object-page ">
+                                        <a href="http://preview.imithemes.com/autostars-wp-realestate/dashboard/">Dashboard</a>
+                                    </li>
+                                    <li class="menu-item-729 menu-item menu-item-type-custom menu-item-object-custom ">
+                                        <a href="http://preview.imithemes.com/autostars-wp-realestate/dashboard/?manage=1">Manage Ads</a>
+                                    </li>
+                                    <li class="menu-item-733 menu-item menu-item-type-custom menu-item-object-custom ">
+                                        <a href="http://preview.imithemes.com/autostars-wp-realestate/dashboard/?search=1">Manage Saved Searches</a>
+                                    </li>
+                                    <li class="menu-item-732 menu-item menu-item-type-custom menu-item-object-custom ">
+                                        <a href="http://preview.imithemes.com/autostars-wp-realestate/dashboard/?saved=1">Manage Saved Cars</a>
+                                    </li>
+                                    <li class="menu-item-730 menu-item menu-item-type-custom menu-item-object-custom ">
+                                        <a href="http://preview.imithemes.com/autostars-wp-realestate/dashboard/?profile=1">User Profile</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--End Navigation Bar-->
+
+        </div>
+
+        {{{ body }}}
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-3 widget footer_widget widget_newsletter">
+                        <h4 class="widgettitle">Sign up for our newsletter</h4>
+                        <form method="post" action="#">
+                            <input type="text" name="newsletter_name" id="name-nl" placeholder="Name" class="form-control">
+                            <input type="email" name="newsletter_email" id="email-nl" placeholder="Email" class="form-control">
+                            <input type="submit" name="newsletter_submit" class="btn btn-primary btn-block btn-lg" value="Sign up now">
+                        </form>
+                    </div>
+                    <!--End Widget-->
+
+                    <div class="col-md-3 col-sm-3 widget footer_widget widget_nav_menu">
+                        <h4 class="widgettitle">Links</h4>
+                        <div class="menu-blogroll-container">
+                            <ul id="menu-blogroll" class="menu">
+                                <li id="menu-item-767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-767"><a href="#">Blog</a></li>
+                                <li id="menu-item-768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-768"><a href="#">About Us</a></li>
+                                <li id="menu-item-770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-770"><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--End Widget-->
+
+                    <div class="col-md-3 col-sm-3 widget footer_widget widget_nav_menu">
+                        <h4 class="widgettitle">Help &amp; Support</h4>
+                        <div class="menu-help-support-container">
+                            <ul id="menu-help-support" class="menu">
+                                <li id="menu-item-772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-772"><a href="#">Signup</a></li>
+                                <li id="menu-item-773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-773"><a href="#">About Us</a></li>
+                                <li id="menu-item-774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-774"><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--End Widget-->
+
+                    <div class="col-md-3 col-sm-3 widget footer_widget widget_text">
+                        <h4 class="widgettitle">About Farmstand</h4>
+                        <div class="textwidget"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p></div>
+                    </div>
+                    <!--End Widget-->
+
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 copyrights-left">
+                        <p>All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 copyrights-right">
+                        <ul class="social-icons social-icons-colored pull-right">
+                            <li class="facebook"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="pinterest"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                            <li class="google-plus"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="youtube"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            <li class="instagram"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li class="vimeo-square"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/debounce.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/uisearch.js"></script>
+    <script>
+        new UISearch( document.getElementById( 'sb-search' ) );
+    </script>
 </body>
-</HTML>
+</html>

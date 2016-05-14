@@ -4,8 +4,8 @@ var Sequelize = require("sequelize");
 // Reference database connection
 var sequelize = require("../config/connection.js");
 
-// Create "Farm" model that matches up with DB
-var Farm = sequelize.define("character", {
+// Create model that matches up with DB
+var Items = sequelize.define("items", {
 	id: {
 		type: Sequelize.INTEGER,
 		autoIncrement: true,
@@ -26,7 +26,7 @@ var Farm = sequelize.define("character", {
 });
 
 // Sync with DB
-Farm.sync();
+Items.sync();
 
 // Export
-module.exports = Farm;
+module.exports = Items;

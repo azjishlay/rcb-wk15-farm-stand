@@ -1,0 +1,63 @@
+<div class="page-header parallax" style="background-image:url('assets/img/brunch.jpg'); background-color:#30d3d3; height:px;">
+    <div class="container">
+        <h1 class="page-title">Inventory</h1>
+    </div>
+</div>
+
+<div class="main" role="main">
+    <div id="content" class="content full">
+        <div class="container">
+            <div class="row" id="listing-with-filter">
+                <!-- Search Filters -->
+                <div class="col-md-3 search-filters" id="Search-Filters">
+                    <div class="filters-sidebar">
+                        <h3>Refine Search</h3>
+                        <div class="accordion" id="toggleArea">
+                            <!-- Filter by Make -->
+                            <div class="accordion-group panel">
+                                <div class="accordion-heading togglize"> <a class="accordion-toggle inactive collapsed" data-toggle="collapse" data-parent="#" href="#collapseTwo-1" aria-expanded="false">Category<i class="fa fa-angle-down"></i> </a> </div>
+                                <div id="collapseTwo-1" class="accordion-body collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="accordion-inner">
+                                        <ul data-ids="fieldfltr-3451" id="construction-year" class="filter-options-list list-group search-fields">
+                                            <li class="list-group-item"><i class="fa fa-caret-right"></i> <span class="badge"></span><a class="" href="#">XXX</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filter by Make -->
+                            <div class="accordion-group panel">
+                                <div class="accordion-heading togglize"> <a class="accordion-toggle inactive collapsed" data-toggle="collapse" data-parent="#" href="#collapseTwo-3" aria-expanded="false">Price<i class="fa fa-angle-down"></i> </a> </div>
+                                <div id="collapseTwo-3" class="accordion-body collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="accordion-inner">
+                                        <ul data-ids="fieldfltr-3449" id="range_price" class="filter-options-list list-group search-fields">
+                                            <li><i class="fa fa-caret-right"></i> <b>$ <span class="left">0</span> -
+                                                <span class="right">10000</span></b> <div class="slider slider-horizontal" style="width: 0px;"><div class="slider-track"><div class="slider-selection" style="left: 0%; width: 10%;"></div><div class="slider-handle round" style="left: 0%;"></div><div class="slider-handle round" style="left: 10%;"></div></div><div class="tooltip top hide" style="top: -14px; left: 0px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0 : 10000</div></div><input id="ex2" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100000" data-slider-step="100" data-slider-value="[0,10000]" data-imic-start="" data-imic-end=""></div>
+                                                <br>
+                                                <!--<span class="left">0</span> -
+                                                <span class="right">10000</span>-->
+                                                <a data-range="0-10000" class="range-val btn-primary btn-sm btn">Filter</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End Toggle -->
+                        <a href="#" id="reset-filters-search" class="btn-default btn-sm btn"><i class="fa fa-refresh"></i> Reset search</a>
+
+                    </div>
+                </div>
+
+                <!-- Listing Results -->
+                <div class="col-md-9 results-container">
+                    <div class="results-container-in">
+                        <div id="results-holder" class="results-grid-view">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<div class="page-header parallax" style="background-image:url('assets/img/brunch.jpg'); background-color:#30d3d3; height:px;">
+    <div class="container">
+        <h1 class="page-title">Add new item</h1>
+    </div>
+</div>
+
+<div class="main" role="main">
+    <div id="content" class="content full">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <!-- SIDEBAR -->
+                </div>
+
+                <div class="col-md-8 col-sm-8">
+
+                    <!-- FORM -->
+                    <section class="form-content">
+                        <div class="tab-pane fade active in">
+                            <h3>Enter your item details</h3>
+                            <div class="lighter"><p>Don't forget to set the price!</p></div>
+                            <div class="spacer-10"></div>
+
+                            <div class="tab-content">
+                                <form action="" method="POST" role="form">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Item</label>
+                                            <input type="text" class="form-control" id="item" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Category</label>
+                                            <div>
+                                                <select class="selectpicker form-control" id="category" data-width="100%">
+                                                    <option>Fruits</option>
+                                                    <option>Roots</option>
+                                                    <option>Pies</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Price</label>
+                                            <input type="text" class="form-control" id="price" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Quantity</label>
+                                            <input type="text" class="form-control" id="quantity" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <div class="spacer-10"></div>
+
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-block btn-info btn-lg disabled" id="add-btn">
+                                            Clear Form
+                                        </button>
+                                    </div>
+
+                                    <div class="col-md-6 text-right">
+                                        <button type="submit" class="btn btn-block btn-info btn-lg" id="add-btn">
+                                            Add Item
+                                        </button>
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+
+
+                        </div>
+                    </section>
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
