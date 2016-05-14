@@ -53,6 +53,13 @@
                     <div class="results-container-in">
                         <div id="results-holder" class="results-grid-view">
 
+                            {{#each data}}
+                                {{this.item}}
+                                {{this.category}}
+                                {{this.price}}
+                                {{this.quantity}}
+
+                            {{/each}}
 
                         </div>
                     </div>
