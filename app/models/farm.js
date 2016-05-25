@@ -18,7 +18,7 @@ var Items = sequelize.define("items", {
 		type: Sequelize.STRING,
 	},
 	price: {
-		type: Sequelize.INTEGER,
+		type: Sequelize.DECIMAL(8,2),
 	},
 	quantity: {
 		type: Sequelize.INTEGER,

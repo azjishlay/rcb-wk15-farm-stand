@@ -24,7 +24,6 @@ app.set('views', __dirname + '/app/views');
 // ROUTES
 var routes = require('./app/controllers/farm-controller.js');
 app.use('/', routes);
-app.use('/add-new', routes);
 
 // CONFIRMATION
 var PORT = process.env.NODE_ENV || 3000;

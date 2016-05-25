@@ -38,8 +38,8 @@ router.get('/search', function(req,res) {
 });
 
 router.get('/add-new', function(req,res) {
-    console.log('Add new!');
-    res.render('add-new');
+    console.log("Add new!");
+    res.redirect('/');
 });
 
 router.post('/add-new', function(req,res){
